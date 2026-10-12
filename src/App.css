@@ -1,0 +1,202 @@
+/* ==========================
+   HOME / WELCOME SCREEN STYLES
+   ========================== */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #0c1524; /* Dark navy background matching reference */
+  padding: 20px;
+}
+
+.home-content {
+  max-width: 500px;
+  width: 100%;
+  text-align: left;
+}
+
+.home-subtitle {
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #abc1f5;
+  margin: 0 0 10px 0;
+}
+
+.home-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 30px 0;
+  line-height: 1.1;
+}
+
+/* ==========================
+   LIGHT QUIZ QUESTION STYLES
+   ========================== */
+.quiz-wrapper-light {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f5f7;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.form-card {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 800px;
+  border-radius: 6px;
+  padding: 24px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.form-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 12px 0;
+  text-align: left;
+}
+
+.form-divider {
+  border: none;
+  border-top: 1px solid #e2e8f0;
+  margin-bottom: 20px;
+}
+
+/* Question & Horizontal Options */
+.question-card {
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.question-text {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 16px;
+}
+
+.required-asterisk {
+  color: #ef4444;
+}
+
+.options-horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #334155;
+}
+
+.radio-option input[type="radio"] {
+  cursor: pointer;
+  accent-color: #10b981;
+}
+
+/* Centered Green Button */
+.submit-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.submit-green-btn {
+  background-color: #34d399;
+  background: #38a169;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.submit-green-btn:hover:not(:disabled) {
+  background-color: #2f855a;
+}
+
+.submit-green-btn:disabled {
+  background-color: #a0aec0;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* ==========================
+   RESULT SCREEN STYLES
+   ========================== */
+.result-dark-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #0c1524;
+  padding: 20px;
+}
+
+.result-card-content {
+  max-width: 450px;
+  width: 100%;
+  text-align: left;
+}
+
+.quiz-completed-sub {
+  font-size: 1.2rem;
+  color: #abc1f5;
+  margin: 0 0 8px 0;
+  font-weight: 400;
+}
+
+.your-score-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 24px 0;
+  line-height: 1.1;
+}
+
+.score-display-box {
+  background-color: #243247;
+  border-radius: 6px;
+  padding: 28px 20px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.score-fraction {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+/* Shared Purple Gradient Button (Used for Start Quiz & Result Screen) */
+.start-quiz-purple-btn {
+  background: linear-gradient(135deg, #a855f7, #6366f1);
+  color: #ffffff;
+  border: none;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(168, 85, 247, 0.4);
+  transition: opacity 0.2s ease;
+}
+
+.start-quiz-purple-btn:hover {
+  opacity: 0.9;
+}
